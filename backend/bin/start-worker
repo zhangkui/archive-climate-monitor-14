@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+export AV_ROLE=worker
+exec bundle exec sidekiq -C config/sidekiq.yml

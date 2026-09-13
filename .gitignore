@@ -1,0 +1,20 @@
+# Ruby / Rails
+/backend/log/*
+/backend/tmp/*
+/backend/storage/*
+/backend/.bundle
+/backend/vendor/bundle
+*.log
+
+# Node / Vite
+/frontend/node_modules/
+/frontend/dist/
+/frontend/tsconfig.tsbuildinfo
+
+# Env / editor
+.env
+.env.local
+.idea/
+.vscode/
+*.swp
+.DS_Store

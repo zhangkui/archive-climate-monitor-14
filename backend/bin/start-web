@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+export AV_ROLE=web
+exec bundle exec puma -C config/puma.rb

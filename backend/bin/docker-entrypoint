@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+# 迁移由独立的 migrate 服务完成；此处只等待数据库就绪后启动进程
+until pg_isready -h "${DATABASE_HOST:-timescale}" -p 5432 -q; do
+  sleep 1
+done
+
+exec "$@"

@@ -1,0 +1,5 @@
+:concurrency: 5
+:queues:
+  - risk
+  - reports
+  - default
